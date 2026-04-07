@@ -1,0 +1,46 @@
+{
+    "insurance_type": "Property",
+    "target_col": "Annual_Premium",
+    "features": {
+        "numerical": [
+            {
+                "name": "Property_Value",
+                "min": 201010.0,
+                "max": 9999147.0,
+                "mean": 5131823.7968
+            },
+            {
+                "name": "No_Claim_Years",
+                "min": 0.0,
+                "max": 5.0,
+                "mean": 2.4999
+            }
+        ],
+        "categorical": {
+            "Sub_Type": [
+                "Home Insurance",
+                "Fire Insurance",
+                "Theft Insurance"
+            ],
+            "Property_Type": [
+                "Warehouse",
+                "Shop",
+                "Apartment",
+                "House",
+                "Factory"
+            ],
+            "Risk_Type": [
+                "Earthquake",
+                "Fire",
+                "Flood",
+                "Theft"
+            ],
+            "Location": [
+                "Rural",
+                "Coastal",
+                "Industrial",
+                "Urban"
+            ]
+        }
+    }
+}

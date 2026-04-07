@@ -1,0 +1,45 @@
+{
+    "insurance_type": "Business",
+    "target_col": "Annual_Premium",
+    "features": {
+        "numerical": [
+            {
+                "name": "Employees",
+                "min": 5.0,
+                "max": 499.0,
+                "mean": 253.6605
+            },
+            {
+                "name": "Coverage_Amount",
+                "min": 202010.0,
+                "max": 9781870.0,
+                "mean": 3285730.0791
+            },
+            {
+                "name": "No_Claim_Years",
+                "min": 0.0,
+                "max": 5.0,
+                "mean": 2.4999
+            }
+        ],
+        "categorical": {
+            "Sub_Type": [
+                "Workers Compensation",
+                "Professional Indemnity",
+                "Liability"
+            ],
+            "Business_Type": [
+                "Construction",
+                "Manufacturing",
+                "IT",
+                "Retail",
+                "Healthcare"
+            ],
+            "Risk_Level": [
+                "Medium",
+                "High",
+                "Low"
+            ]
+        }
+    }
+}

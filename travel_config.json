@@ -1,0 +1,53 @@
+{
+    "insurance_type": "Travel",
+    "target_col": "Premium",
+    "features": {
+        "numerical": [
+            {
+                "name": "Duration_Days",
+                "min": 1.0,
+                "max": 29.0,
+                "mean": 14.9438
+            },
+            {
+                "name": "Coverage_Amount",
+                "min": 11352.0,
+                "max": 789210.0,
+                "mean": 258966.5504
+            },
+            {
+                "name": "No_Claim_Years",
+                "min": 0.0,
+                "max": 5.0,
+                "mean": 2.4999
+            }
+        ],
+        "categorical": {
+            "Trip_Type": [
+                "International",
+                "Domestic"
+            ],
+            "Destination": [
+                "Singapore",
+                "India",
+                "Australia",
+                "UAE",
+                "Europe",
+                "UK",
+                "USA"
+            ],
+            "Medical_Cover": [
+                "Yes",
+                "No"
+            ],
+            "Trip_Cancellation": [
+                "No",
+                "Yes"
+            ],
+            "Baggage_Loss": [
+                "No",
+                "Yes"
+            ]
+        }
+    }
+}

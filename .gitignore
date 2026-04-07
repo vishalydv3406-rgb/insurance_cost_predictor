@@ -1,0 +1,18 @@
+# Machine Learning Models and Artifacts
+*.pkl
+*.model
+*.h5
+
+# Python specifics
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+.env
+
+# MacOS
+.DS_Store
+
+# Data files (optional, but keep them if requested)
+# *.csv

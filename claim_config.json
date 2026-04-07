@@ -1,0 +1,58 @@
+{
+    "insurance_type": "Claim",
+    "target_col": "claim",
+    "features": {
+        "numerical": [
+            {
+                "name": "age",
+                "min": 18.0,
+                "max": 64.0,
+                "mean": 40.95388
+            },
+            {
+                "name": "bmi",
+                "min": 15.0,
+                "max": 55.0,
+                "mean": 28.022884210526314
+            },
+            {
+                "name": "bloodpressure",
+                "min": 80.0,
+                "max": 178.0,
+                "mean": 119.55105263157894
+            },
+            {
+                "name": "children",
+                "min": 0.0,
+                "max": 5.0,
+                "mean": 1.1942315789473683
+            },
+            {
+                "name": "No_Claim_Years",
+                "min": 0.0,
+                "max": 5.0,
+                "mean": 2.5063
+            }
+        ],
+        "categorical": {
+            "gender": [
+                "female",
+                "male"
+            ],
+            "diabetic": [
+                "No",
+                "Yes"
+            ],
+            "smoker": [
+                "No",
+                "Yes"
+            ],
+            "region": [
+                "northeast",
+                "southeast",
+                "southwest",
+                "northwest"
+            ]
+        }
+    }
+}

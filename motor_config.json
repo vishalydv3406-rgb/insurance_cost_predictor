@@ -1,0 +1,47 @@
+{
+    "insurance_type": "Motor",
+    "target_col": "Annual_Premium",
+    "features": {
+        "numerical": [
+            {
+                "name": "Vehicle_Age",
+                "min": 0.0,
+                "max": 14.0,
+                "mean": 7.0082
+            },
+            {
+                "name": "Coverage_Amount",
+                "min": 10260.0,
+                "max": 718704.0,
+                "mean": 232051.8957
+            },
+            {
+                "name": "No_Claim_Bonus",
+                "min": 0.0,
+                "max": 50.0,
+                "mean": 24.923
+            },
+            {
+                "name": "No_Claim_Years",
+                "min": 0.0,
+                "max": 5.0,
+                "mean": 2.4999
+            }
+        ],
+        "categorical": {
+            "Sub_Type": [
+                "Third Party",
+                "Comprehensive"
+            ],
+            "Vehicle_Type": [
+                "Car",
+                "Truck",
+                "Bike"
+            ],
+            "Accident_History": [
+                "No",
+                "Yes"
+            ]
+        }
+    }
+}

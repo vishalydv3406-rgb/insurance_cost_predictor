@@ -1,0 +1,49 @@
+{
+    "insurance_type": "Life",
+    "target_col": "Annual_Premium",
+    "features": {
+        "numerical": [
+            {
+                "name": "Customer_Age",
+                "min": 21.0,
+                "max": 64.0,
+                "mean": 42.528
+            },
+            {
+                "name": "Coverage_Amount",
+                "min": 166800.0,
+                "max": 2916016.0,
+                "mean": 1096183.66
+            },
+            {
+                "name": "Policy_Term",
+                "min": 10.0,
+                "max": 30.0,
+                "mean": 20.39
+            },
+            {
+                "name": "No_Claim_Years",
+                "min": 0.0,
+                "max": 5.0,
+                "mean": 2.457
+            }
+        ],
+        "categorical": {
+            "Sub_Type": [
+                "ULIP",
+                "Endowment",
+                "Term Life",
+                "Whole Life"
+            ],
+            "Gender": [
+                "Male",
+                "Female"
+            ],
+            "Nominee_Relation": [
+                "Parent",
+                "Child",
+                "Spouse"
+            ]
+        }
+    }
+}

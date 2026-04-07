@@ -1,0 +1,43 @@
+{
+    "insurance_type": "Specialty",
+    "target_col": "Annual_Premium",
+    "features": {
+        "numerical": [
+            {
+                "name": "Coverage_Amount",
+                "min": 5940.0,
+                "max": 1948089.0,
+                "mean": 565839.7478
+            },
+            {
+                "name": "No_Claim_Years",
+                "min": 0.0,
+                "max": 5.0,
+                "mean": 2.4999
+            }
+        ],
+        "categorical": {
+            "Sub_Type": [
+                "Crop Insurance",
+                "Pet Insurance",
+                "Gadget Insurance",
+                "Cyber Insurance"
+            ],
+            "Asset_Type": [
+                "Dog",
+                "Mobile",
+                "Agriculture",
+                "Data",
+                "Laptop",
+                "Cat"
+            ],
+            "Risk_Factor": [
+                "Theft",
+                "Weather",
+                "Damage",
+                "Hacking",
+                "Health"
+            ]
+        }
+    }
+}

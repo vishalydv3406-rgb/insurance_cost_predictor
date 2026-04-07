@@ -1,0 +1,48 @@
+{
+    "insurance_type": "Health",
+    "target_col": "Annual_Premium",
+    "features": {
+        "numerical": [
+            {
+                "name": "Customer_Age",
+                "min": 18.0,
+                "max": 69.0,
+                "mean": 43.5361
+            },
+            {
+                "name": "Family_Size",
+                "min": 1.0,
+                "max": 5.0,
+                "mean": 2.5037
+            },
+            {
+                "name": "Coverage_Amount",
+                "min": 50710.0,
+                "max": 1942551.0,
+                "mean": 673395.5568
+            },
+            {
+                "name": "No_Claim_Years",
+                "min": 0.0,
+                "max": 5.0,
+                "mean": 2.4999
+            }
+        ],
+        "categorical": {
+            "Sub_Type": [
+                "Family Floater",
+                "Individual",
+                "Critical Illness",
+                "Top-up Plan"
+            ],
+            "Pre_Existing_Disease": [
+                "No",
+                "Yes"
+            ],
+            "Hospital_Network": [
+                "Yes",
+                "No"
+            ]
+        }
+    }
+}

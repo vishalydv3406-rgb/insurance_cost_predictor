@@ -111,14 +111,14 @@ collection = init_connection()
 
 @st.cache_data
 def get_available_insurances():
-    configs = glob.glob(str(BASE_DIR / "*_config.json"))
+    configs = glob.glob(str(BASE_DIR / "config" / "*_config.json"))
     insurances = [Path(c).name.split("_config")[0].capitalize() for c in configs]
     return sorted(insurances)
 
 @st.cache_data
 def get_dataset_map():
-    csvs = glob.glob(str(BASE_DIR / '*_insurance_*.csv'))
-    csvs.append(str(BASE_DIR / 'insurance.csv'))
+    csvs = glob.glob(str(BASE_DIR / "data" / '*_insurance_*.csv'))
+    csvs.append(str(BASE_DIR / "data" / 'insurance.csv'))
     mapping = {}
     for c in csvs:
         name = Path(c).name
@@ -132,8 +132,8 @@ def get_dataset_map():
 @st.cache_resource
 def load_dynamic_artifacts(insurance_type):
     name_lower = insurance_type.lower()
-    model_path = BASE_DIR / f"{name_lower}_models.pkl"
-    config_path = BASE_DIR / f"{name_lower}_config.json"
+    model_path = BASE_DIR / "models" / f"{name_lower}_models.pkl"
+    config_path = BASE_DIR / "config" / f"{name_lower}_config.json"
     
     if not model_path.exists() or not config_path.exists():
         return None, None
@@ -203,7 +203,7 @@ def get_model_performance(insurance_type):
     risk_acc = None
     if insurance_type == "Claim":
         try:
-            risk_clf_path = BASE_DIR / "risk_classifier.pkl"
+            risk_clf_path = BASE_DIR / "models" / "risk_classifier.pkl"
             if risk_clf_path.exists():
                 # We need the main insurance.csv preprocessing for the main classifier
                 # This is tricky because it uses pre-poly features.

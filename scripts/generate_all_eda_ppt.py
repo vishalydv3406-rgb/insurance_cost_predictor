@@ -142,8 +142,43 @@ p.level = 1
 p = content.add_paragraph()
 p.text = "Risk Profiler: Binary mapping users via Random Forest as High/Low risk yielded a highly resilient 99.71% test accuracy."
 p.level = 1
+# Dynamic Slide: Detailed Prediction Output for all Datasets
+slide_layout = prs.slide_layouts[1]
+slide = prs.slides.add_slide(slide_layout)
+title = slide.shapes.title
+title.text = "Prediction Outcomes by Dataset"
+content = slide.placeholders[1].text_frame
+content.text = "Model Performace (R² Score) Extrapolated Across Domains:"
+p = content.add_paragraph()
+p.text = "Core Claim Dataset: Gradient Boosting successfully achieved 0.9362 R² ($473 MAE)."
+p.level = 1
+p = content.add_paragraph()
+p.text = "Travel Insurance: Top model yielded 0.7209 R²."
+p.level = 1
+p = content.add_paragraph()
+p.text = "Life Insurance: Top model yielded 0.6828 R²."
+p.level = 1
+p = content.add_paragraph()
+p.text = "Health Insurance: Top model yielded 0.6576 R²."
+p.level = 1
+p = content.add_paragraph()
+p.text = "Motor Insurance: Top model yielded 0.6301 R²."
+p.level = 1
+p = content.add_paragraph()
+p.text = "Property Insurance: Only dataset where Linear Regression prevailed (0.6253 R²)."
+p.level = 1
+p = content.add_paragraph()
+p.text = "Business Insurance: Top model yielded 0.5967 R²."
+p.level = 1
+p = content.add_paragraph()
+p.text = "Specialty Insurance: Top model yielded 0.5927 R²."
+p.level = 1
+p = content.add_paragraph()
+p.text = "Conclusion: Non-linear boosting models drastically outperform standardized distance formulas for insurance computation."
+p.level = 0
 
 try:
+
     prs.save('Project_Presentation_Full_EDA.pptx')
     print("Successfully saved Project_Presentation_Full_EDA.pptx")
 except Exception as e:
